@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Sanitary Flag",
+  "version": "0.1",
+  "description": "Shows red icon if sanitation fault detected.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/maps/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
